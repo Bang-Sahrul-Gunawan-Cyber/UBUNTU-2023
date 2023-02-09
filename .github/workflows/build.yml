@@ -26,10 +26,6 @@ jobs:
         run: dotnet --info
         shell: bash
 
-      - name: Restore dependencies
-        run: dotnet restore
-        shell: bash
-
       - name: Build 
         run: dotnet build --configuration Release --no-restore
         shell: bash
